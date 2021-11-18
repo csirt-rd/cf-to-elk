@@ -25,6 +25,9 @@ This project allows you to quickly analyze logs from your Cloudflare domains usi
 
 This project is similar to Cloudflare's Elasticsearch log integration, but is small and easy enough to run on your local machine.
 
+<img width="960" alt="Dashboard" src="https://user-images.githubusercontent.com/87453279/142455549-3d97f0f1-f0f2-4960-87de-2692eb8e1914.png">
+
+
 ## System Requirements
 
 - **8GB - 12GB Memory**
