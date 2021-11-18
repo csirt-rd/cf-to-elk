@@ -485,7 +485,7 @@ _=/usr/bin/printenv
 
 ## Clone this project
 
-git clone https://github.com/cookandy/cloudflare-elk.git
+`git clone https://github.com/cookandy/cloudflare-elk.git`
 
 ~~~
 cd conf
