@@ -3,10 +3,10 @@
     <img width="946" alt="Ciberseguridad" src="https://user-images.githubusercontent.com/46871300/125079966-38ef8380-e092-11eb-9b5e-8bd0314d9274.PNG">
   </a>
  
-   <h3 align="center">Implementacion de SOC con herramientas Open Source</h3>
+   <h3 align="center">Cloudflare to Elastic Stack</h3>
 
   <p align="center">
-    Proporcionamos los primeros pasos a los nuevos equipos de manejo de incidentes.
+    We provide the first steps to new incident management teams.
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explora la guia »</strong></a>
     <br />
@@ -16,16 +16,14 @@
 
 
 
-This project allows you to quickly analyze logs from your Cloudflare domains using the ELK stack.
 
-This project is similar to Cloudflare's Elasticsearch log integration, but is small and easy enough to run on your local machine.
 
 
 # Install Guide & Build Instructions
 
-This setup guide will show you how to create your **ElasticXDR** Platform.
+This project allows you to quickly analyze logs from your Cloudflare domains using the ELK stack.
 
-I have listed some install steps below to help you re-create the same install build that I created. This will be a simple install out-of-box deployment.
+This project is similar to Cloudflare's Elasticsearch log integration, but is small and easy enough to run on your local machine.
 
 ## System Requirements
 
@@ -39,7 +37,7 @@ I have listed some install steps below to help you re-create the same install bu
 - **David Walden repository**
 - **Putty or SSH Terminal**
 
-## Prerequisitis
+## Prerequisites
 
 - **An enterprise Cloudflare account (required to use the log API)
 - **Your API email address and key (found on your Cloudflare profile page)
@@ -125,7 +123,6 @@ sudo netplan --debug apply
 
 The Elastic Stack requires Java 8 to be installed.
 
-- Before we install our ElasticXDR, we will need to update our Ubuntu Server first.
 - Open a Terminal or SSH connection and login and type this commands.
 
 ~~~
@@ -158,8 +155,10 @@ sudo apt-get install openjdk-8-jdk -y
 nano /etc/elasticsearch/jvm.options
 ~~~
 
+~~~
 -Xms2g
 -Xmx2g
+~~~
 
 Now lets add the Elastic Repos into our system!
 
