@@ -485,7 +485,17 @@ _=/usr/bin/printenv
 
 ## Clone this project
 
-`git clone https://github.com/cookandy/cloudflare-elk.git`
+- Clone this project
+
+`git clone https://github.com/oencarnacion/cf-to-elk.git`
+
+
+- From the cloudflare-elk directory, edit the scripts and include the following required fields
+
+1. `CF_EMAIL: your Cloudflare email address`
+2. `CF_API_KEY: your Cloudflare API key`
+3. `CF_ZONES: a comma-separated list of Cloudflare zone IDs to retrieve logs from (found on your domain's page)`
+4. `CF_FIELDS: a comma-separated list of fields to be retrieved for your logs (see all available fields here)`
 
 ~~~
 cd conf
