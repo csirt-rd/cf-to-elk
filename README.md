@@ -411,17 +411,6 @@ sudo systemctl enable filebeat
 curl -XGET http://192.168.0.25:9200/_cat/indices?v
 ~~~
 
-## Conclusion
-
-Now you have a functional **ElasticXDR** basic install on your Ubuntu system. I recommend you continue building your **ElasticXDR** Security settings.
-
-Security of the devices is not setup, we will setup that process in the next Guide Named: **Security-Module**
-> https://github.com/watsoninfosec/ElasticXDR/blob/main/Deployment-Guide/Security-Module/Security-Module.md
-
-
-# Troubleshotting Tips
-- If you get an error messgae like this for **Kibana** , **Elasticsearch** or **Filebeat**:
-
 ~~~
 ● elasticsearch.service - Elasticsearch
    Loaded: loaded (/usr/lib/systemd/system/elasticsearch.service; enabled; vendor preset: ena   Active: failed (Result: timeout) since Tue 2020-12-15 00:44:16 UTC; 24min ago
@@ -435,10 +424,18 @@ Dec 15 00:44:16 test01 systemd[1]: elasticsearch.service: Start operation timed 
 Dec 15 00:44:16 test01 systemd[1]: Failed to start Elasticsearch.
 ~~~
 
+- We add this statement so that the script is executed every 5 minutes
+
+~~~
+crontab -e
+~~~
+
 ~~~
 */5 * * * * /scripts/fetch-cf-logs.sh
 0 0 * * * /scripts/clean-old-indices.sh
 ~~~
+
+- In the linux variable we add these sentences
 
 ~~~
 nano /etc/enviroment
