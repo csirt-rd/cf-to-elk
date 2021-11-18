@@ -15,6 +15,12 @@
 </p>
 
 
+
+This project allows you to quickly analyze logs from your Cloudflare domains using the ELK stack.
+
+This project is similar to Cloudflare's Elasticsearch log integration, but is small and easy enough to run on your local machine.
+
+
 # Install Guide & Build Instructions
 
 This setup guide will show you how to create your **ElasticXDR** Platform.
