@@ -356,58 +356,6 @@ sudo systemctl restart kibana
 sudo systemctl restart elasticsearch
 ~~~
 
-
-## Configure Filebeat
-
-Filebeat is a lightweight plugin used to collect and ship log files.
-
-- Install Filebeat by running the following command:
-
-~~~
-sudo apt-get install filebeat -y
-~~~
-
-- Configure Filebeat:
-
-~~~
-sudo nano /etc/filebeat/filebeat.yml
-~~~
-
-- Under the Elasticsearch output section, search for the commented outlines:
-
-~~~
-output.elasticsearch:
-hosts: ["localhost:9200"]
-~~~
-
-- remove the (#) sign and edit the line with your system IP address.
-
-- It should look like this:
-
-~~~
-output.elasticsearch
-hosts: ["192.168.0.25:9200"]
-~~~
-
-Note: Remeber to change **IP** with you system IP addresss!
-- Next, load the index template:
-
-~~~
-sudo filebeat setup --index-management -E output.logstash.enabled=false -E 'output.elasticsearch.hosts=["192.168.0.25:9200"]'
-~~~
-
-The system will do some work on setting it up.
-
-- Start and enable the Filebeat service:
-
-~~~
-sudo systemctl start filebeat
-~~~
-
-~~~
-sudo systemctl enable filebeat
-~~~
-
 - Verify Elasticsearch Reception of Data:
 
 ~~~
