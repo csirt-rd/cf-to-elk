@@ -11,7 +11,7 @@ days_ago=${ES_INDEX_RETENTION_DAYS}
 counter=0
 
 # Elasticsearch connection info
-ELASTICSEARCH_HOST="localhost"
+ELASTICSEARCH_HOST="<IP>"
 ELASTICSEARCH_PORT="9200"
 ELASTICSEARCH_USER="elastic"
 ELASTICSEARCH_PASSWORD="elastic"
