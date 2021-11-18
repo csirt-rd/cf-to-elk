@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # create geo mapping
-curl -s -H "Content-type: application/json" -X PUT localhost:9200/_template/cloudflare -d'{
+curl -s -H "Content-type: application/json" -X PUT <IP>:9200/_template/cloudflare -d'{
   "template": "cloudflare-*",
   "settings": {},
   "mappings": {
@@ -21,4 +21,4 @@ curl -s -H "Content-type: application/json" -X PUT localhost:9200/_template/clou
 }'
 
 # import dashboards into kibana
-curl -s -H "kbn-xsrf: true" -X POST localhost:5601/api/saved_objects/_import?overwrite=true --form file=@/scripts/export.ndjson
+curl -s -H "kbn-xsrf: true" -X POST <IP>:5601/api/saved_objects/_import?overwrite=true --form file=@/scripts/export.ndjson
