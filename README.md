@@ -33,6 +33,11 @@ I have listed some install steps below to help you re-create the same install bu
 - **David Walden repository**
 - **Putty or SSH Terminal**
 
+## Prerequisitis
+
+- **An enterprise Cloudflare account (required to use the log API)
+- **Your API email address and key (found on your Cloudflare profile page)
+
 ## Ubuntu 20.04.3 LTS Linux Distribution
 
  First we need to install ubuntu, this can be on a VMware or Oracle VirtualBox setup. Or if you have the physical hardware to spare that will work as well.
@@ -425,12 +430,16 @@ Dec 15 00:44:16 test01 systemd[1]: elasticsearch.service: Start operation timed 
 Dec 15 00:44:16 test01 systemd[1]: Failed to start Elasticsearch.
 ~~~
 
-
+~~~
 */5 * * * * /scripts/fetch-cf-logs.sh
 0 0 * * * /scripts/clean-old-indices.sh
+~~~
 
+~~~
 nano /etc/enviroment
+~~~
 
+~~~
 PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
 KIBANA_GID=993
 REFRESHED_AT=2020-06-20
@@ -470,7 +479,24 @@ DEBIAN_FRONTEND=teletype
 CF_EMAIL=<EMAIL>
 ES_HOME=/opt/elasticsearch
 _=/usr/bin/printenv
+~~~
 
+## Clone this project
+
+git clone https://github.com/cookandy/cloudflare-elk.git
+
+~~~
+cd conf
+mv logstash.conf /etc/logstash/conf.d
+~~~
+
+~~~
+mv scripts /
+~~~
+
+~~~
+mv GeoLite2-City.mmdb /
+~~~
 
 
 Try undoing the changes you have done by, **(#)** commenting you changes then save the file and restart the services. This will confirm if your recent last changes have made the file unstable!
