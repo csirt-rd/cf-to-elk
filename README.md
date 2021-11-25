@@ -394,43 +394,15 @@ nano /etc/enviroment
 
 ~~~
 PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
-KIBANA_GID=993
-REFRESHED_AT=2020-06-20
-LOGSTASH_UID=992
-HOSTNAME=d4d5ca597fb0
-LANGUAGE=en_US:en
-KIBANA_VERSION=7.15.2
 ES_INDEX_RETENTION_DAYS=10
-KIBANA_PACKAGE=kibana-7.15.2-linux-x86_64.tar.gz
-KIBANA_UID=993
-ES_PATH_CONF=/etc/elasticsearch
-LOGSTASH_PATH_CONF=/etc/logstash
-PWD=/
-ES_PACKAGE=elasticsearch-7.15.2-linux-x86_64.tar.gz
-ES_UID=991
-HOME=/root
-LANG=en_US.UTF-8
-LOGSTASH_PACKAGE=logstash-7.15.2-linux-x86_64.tar.gz
 CF_API_KEY=<API-KEY>
 CF_FIELDS=CacheCacheStatus,ClientRequestHost,ClientRequestURI,CacheResponseStatus,EdgeResponseStatus,OriginResponseStatus,EdgeStartTimestamp,ClientIP,ClientRequestBytes,CacheResponseBytes,EdgeResponseBytes,ClientRequestMethod,ZoneID,ClientRequestProtocol,ClientRequestUserAgent
-LOGSTASH_PATH_SETTINGS=/opt/logstash/config
-ES_GID=991
-KIBANA_HOME=/opt/kibana
-ES_PATH_BACKUP=/var/backups
-SHLVL=0
-LOGSTASH_GID=992
-ES_VERSION=7.15.2
-LOGSTASH_VERSION=7.15.2
-LC_ALL=en_US.UTF-8
 ES_CLEAN_INDICES_SCHEDULE=0 0 * * *
 CF_ZONES=<ZONE ID PARA AGREGAR MAS DE UNO DEBES DE SEPARARLO POR: ,>
 CF_LOGS_FETCH_SCHEDULE=*/5 * * * *
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-LOGSTASH_HOME=/opt/logstash
 CF_LOGS_FETCH_MIN=5
-DEBIAN_FRONTEND=teletype
 CF_EMAIL=<EMAIL>
-ES_HOME=/opt/elasticsearch
 _=/usr/bin/printenv
 ~~~
 
