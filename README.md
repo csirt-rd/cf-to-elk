@@ -396,7 +396,7 @@ nano /etc/enviroment
 PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
 ES_INDEX_RETENTION_DAYS=10
 CF_API_KEY=<API-KEY>
-CF_FIELDS=RayID,ClientDeviceType,EdgeRateLimitID,WAFRuleMessage,WAFRuleID,EdgeRateLimitAction,WAFAction,EdgePathingStatus,EdgePathingOp,EdgePathingSrc,CacheCacheStatus,ClientRequestHost,ClientRequestURI,CacheResponseStatus,EdgeResponseStatus,OriginResponseStatus,EdgeStartTimestamp,ClientIP,,ClientRequestBytes,CacheResponseBytes,EdgeResponseBytes,ClientRequestMethod,ZoneID,ClientRequestProtocol,ClientRequestUserAgent,WorkerSubrequest
+CF_FIELDS=RayID,ClientDeviceType,EdgeRateLimitID,WAFRuleMessage,WAFRuleID,EdgeRateLimitAction,WAFAction,EdgePathingStatus,EdgePathingOp,EdgePathingSrc,CacheCacheStatus,ClientRequestHost,ClientRequestURI,CacheResponseStatus,EdgeResponseStatus,OriginResponseStatus,EdgeStartTimestamp,ClientIP,ClientRequestBytes,CacheResponseBytes,EdgeResponseBytes,ClientRequestMethod,ZoneID,ClientRequestProtocol,ClientRequestUserAgent,WorkerSubrequest
 ES_CLEAN_INDICES_SCHEDULE=0 0 * * *
 CF_ZONES=<ZONE ID PARA AGREGAR MAS DE UNO DEBES DE SEPARARLO POR: ,>
 CF_LOGS_FETCH_SCHEDULE=*/5 * * * *
