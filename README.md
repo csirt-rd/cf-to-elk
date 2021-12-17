@@ -258,7 +258,7 @@ Once you hit enter you shoud see something like this:
   "cluster_name" : "ElasticXDR",
   "cluster_uuid" : "I2EDGxkoRD27wvVsGSFEyA",
   "version" : {
-    "number" : "7.14.1",
+    "number" : "7.16.0",
     "build_flavor" : "default",
     "build_type" : "deb",
     "build_hash" : "66b55ebfa59c92c15db3f69a335d500018b3331e",
